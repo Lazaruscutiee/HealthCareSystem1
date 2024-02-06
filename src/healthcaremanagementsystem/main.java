@@ -95,7 +95,7 @@ roundPanel7.setBackground(new Color(0,0,0, 25));
         upass = new javax.swing.JPasswordField();
         mainsignin = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
-        fp = new javax.swing.JButton();
+        ForgotPassword = new javax.swing.JButton();
         admin = new javax.swing.JButton();
         ucombo = new javax.swing.JComboBox<>();
         jLabel5 = new javax.swing.JLabel();
@@ -131,6 +131,7 @@ roundPanel7.setBackground(new Color(0,0,0, 25));
         dc = new javax.swing.JTextField();
         jLabel23 = new javax.swing.JLabel();
         patients = new javax.swing.JRadioButton();
+        BackCreatAcc = new javax.swing.JButton();
         kGradientPanel5 = new keeptoo.KGradientPanel();
         roundPanel1 = new healthcaremanagementsystem.RoundPanel();
         jLabel21 = new javax.swing.JLabel();
@@ -138,6 +139,7 @@ roundPanel7.setBackground(new Color(0,0,0, 25));
         signin2 = new javax.swing.JButton();
         adp = new javax.swing.JPasswordField();
         jLabel22 = new javax.swing.JLabel();
+        BackAdmin = new javax.swing.JButton();
         kGradientPanel6 = new keeptoo.KGradientPanel();
         kGradientPanel7 = new keeptoo.KGradientPanel();
         roundPanel6 = new healthcaremanagementsystem.RoundPanel();
@@ -147,6 +149,7 @@ roundPanel7.setBackground(new Color(0,0,0, 25));
         jLabel29 = new javax.swing.JLabel();
         btnemail = new javax.swing.JTextField();
         jButton9 = new javax.swing.JButton();
+        BackFP = new javax.swing.JButton();
         kGradientPanel9 = new keeptoo.KGradientPanel();
         kGradientPanel11 = new keeptoo.KGradientPanel();
         roundPanel7 = new healthcaremanagementsystem.RoundPanel();
@@ -156,6 +159,7 @@ roundPanel7.setBackground(new Color(0,0,0, 25));
         mail3 = new javax.swing.JTextField();
         jButton11 = new javax.swing.JButton();
         jButton12 = new javax.swing.JButton();
+        BackConfirmPassword = new javax.swing.JButton();
 
         roundPanel4.setBackground(new java.awt.Color(255, 255, 204));
         roundPanel4.setRoundBottomLeft(15);
@@ -437,12 +441,12 @@ roundPanel7.setBackground(new Color(0,0,0, 25));
             }
         });
 
-        fp.setFont(new java.awt.Font("OCR A Extended", 0, 10)); // NOI18N
-        fp.setText("Forgot Password?");
-        fp.setContentAreaFilled(false);
-        fp.addActionListener(new java.awt.event.ActionListener() {
+        ForgotPassword.setFont(new java.awt.Font("OCR A Extended", 0, 10)); // NOI18N
+        ForgotPassword.setText("Forgot Password?");
+        ForgotPassword.setContentAreaFilled(false);
+        ForgotPassword.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                fpActionPerformed(evt);
+                ForgotPasswordActionPerformed(evt);
             }
         });
 
@@ -505,7 +509,7 @@ roundPanel7.setBackground(new Color(0,0,0, 25));
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                             .addComponent(admin)
                             .addGap(93, 93, 93)
-                            .addComponent(fp))))
+                            .addComponent(ForgotPassword))))
                 .addContainerGap(10, Short.MAX_VALUE))
         );
         roundPanel3Layout.setVerticalGroup(
@@ -532,14 +536,13 @@ roundPanel7.setBackground(new Color(0,0,0, 25));
                     .addComponent(upass, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel16))
                 .addGap(2, 2, 2)
-                .addComponent(fp)
+                .addComponent(ForgotPassword)
                 .addGap(18, 18, 18)
                 .addComponent(mainsignin, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(roundPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(roundPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jButton3)
-                        .addComponent(jButton1))
+                    .addComponent(jButton3)
+                    .addComponent(jButton1)
                     .addComponent(admin))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -698,14 +701,20 @@ roundPanel7.setBackground(new Color(0,0,0, 25));
             }
         });
 
+        BackCreatAcc.setFont(new java.awt.Font("OCR A Extended", 0, 18)); // NOI18N
+        BackCreatAcc.setText("Back");
+        BackCreatAcc.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(8, 76, 110)));
+        BackCreatAcc.setContentAreaFilled(false);
+        BackCreatAcc.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BackCreatAccActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout kGradientPanel3Layout = new javax.swing.GroupLayout(kGradientPanel3);
         kGradientPanel3.setLayout(kGradientPanel3Layout);
         kGradientPanel3Layout.setHorizontalGroup(
             kGradientPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, kGradientPanel3Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(signinto, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(314, 314, 314))
             .addGroup(kGradientPanel3Layout.createSequentialGroup()
                 .addGap(23, 23, 23)
                 .addGroup(kGradientPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -773,6 +782,14 @@ roundPanel7.setBackground(new Color(0,0,0, 25));
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(dc, javax.swing.GroupLayout.PREFERRED_SIZE, 455, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, kGradientPanel3Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(kGradientPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(signinto, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, kGradientPanel3Layout.createSequentialGroup()
+                        .addComponent(BackCreatAcc, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(39, 39, 39)))
+                .addGap(314, 314, 314))
         );
         kGradientPanel3Layout.setVerticalGroup(
             kGradientPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -825,7 +842,9 @@ roundPanel7.setBackground(new Color(0,0,0, 25));
                     .addComponent(dc, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(47, 47, 47)
                 .addComponent(signinto)
-                .addGap(53, 53, 53))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(BackCreatAcc)
+                .addGap(25, 25, 25))
         );
 
         javax.swing.GroupLayout kGradientPanel2Layout = new javax.swing.GroupLayout(kGradientPanel2);
@@ -874,29 +893,38 @@ roundPanel7.setBackground(new Color(0,0,0, 25));
         jLabel22.setFont(new java.awt.Font("OCR A Extended", 0, 18)); // NOI18N
         jLabel22.setText("Password:");
 
+        BackAdmin.setText("Back");
+
         javax.swing.GroupLayout roundPanel1Layout = new javax.swing.GroupLayout(roundPanel1);
         roundPanel1.setLayout(roundPanel1Layout);
         roundPanel1Layout.setHorizontalGroup(
             roundPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(roundPanel1Layout.createSequentialGroup()
-                .addGap(37, 37, 37)
-                .addGroup(roundPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel22)
-                    .addComponent(jLabel21))
-                .addGap(18, 18, 18)
-                .addGroup(roundPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(adp)
-                    .addComponent(adn, javax.swing.GroupLayout.PREFERRED_SIZE, 186, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(44, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, roundPanel1Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(signin2, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(120, 120, 120))
+            .addGroup(roundPanel1Layout.createSequentialGroup()
+                .addGroup(roundPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(roundPanel1Layout.createSequentialGroup()
+                        .addGap(37, 37, 37)
+                        .addGroup(roundPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jLabel22)
+                            .addComponent(jLabel21))
+                        .addGap(18, 18, 18)
+                        .addGroup(roundPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(adp)
+                            .addComponent(adn, javax.swing.GroupLayout.PREFERRED_SIZE, 186, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(roundPanel1Layout.createSequentialGroup()
+                        .addGap(16, 16, 16)
+                        .addComponent(BackAdmin)))
+                .addContainerGap(44, Short.MAX_VALUE))
         );
         roundPanel1Layout.setVerticalGroup(
             roundPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(roundPanel1Layout.createSequentialGroup()
-                .addContainerGap(257, Short.MAX_VALUE)
+                .addGap(20, 20, 20)
+                .addComponent(BackAdmin)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 214, Short.MAX_VALUE)
                 .addGroup(roundPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel21)
                     .addComponent(adn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -985,31 +1013,45 @@ roundPanel7.setBackground(new Color(0,0,0, 25));
             }
         });
 
+        BackFP.setText("Back");
+        BackFP.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BackFPActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout roundPanel6Layout = new javax.swing.GroupLayout(roundPanel6);
         roundPanel6.setLayout(roundPanel6Layout);
         roundPanel6Layout.setHorizontalGroup(
             roundPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(roundPanel6Layout.createSequentialGroup()
-                .addGap(65, 65, 65)
                 .addGroup(roundPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(roundPanel6Layout.createSequentialGroup()
-                        .addGap(6, 6, 6)
-                        .addComponent(jLabel29)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(code2, javax.swing.GroupLayout.PREFERRED_SIZE, 253, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(roundPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                        .addComponent(sendcode)
-                        .addGroup(roundPanel6Layout.createSequentialGroup()
-                            .addComponent(jLabel28)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(btnemail, javax.swing.GroupLayout.PREFERRED_SIZE, 253, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addComponent(jButton9, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(65, 65, 65)
+                        .addGroup(roundPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(roundPanel6Layout.createSequentialGroup()
+                                .addGap(6, 6, 6)
+                                .addComponent(jLabel29)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(code2, javax.swing.GroupLayout.PREFERRED_SIZE, 253, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(roundPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addComponent(sendcode)
+                                .addGroup(roundPanel6Layout.createSequentialGroup()
+                                    .addComponent(jLabel28)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                    .addComponent(btnemail, javax.swing.GroupLayout.PREFERRED_SIZE, 253, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(jButton9, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(roundPanel6Layout.createSequentialGroup()
+                        .addGap(14, 14, 14)
+                        .addComponent(BackFP)))
                 .addContainerGap(73, Short.MAX_VALUE))
         );
         roundPanel6Layout.setVerticalGroup(
             roundPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(roundPanel6Layout.createSequentialGroup()
-                .addGap(128, 128, 128)
+                .addGap(18, 18, 18)
+                .addComponent(BackFP)
+                .addGap(87, 87, 87)
                 .addGroup(roundPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(roundPanel6Layout.createSequentialGroup()
                         .addComponent(jLabel28)
@@ -1119,10 +1161,21 @@ roundPanel7.setBackground(new Color(0,0,0, 25));
             }
         });
 
+        BackConfirmPassword.setText("Back");
+        BackConfirmPassword.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BackConfirmPasswordActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout roundPanel7Layout = new javax.swing.GroupLayout(roundPanel7);
         roundPanel7.setLayout(roundPanel7Layout);
         roundPanel7Layout.setHorizontalGroup(
             roundPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, roundPanel7Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(jButton11, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(155, 155, 155))
             .addGroup(roundPanel7Layout.createSequentialGroup()
                 .addGroup(roundPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(roundPanel7Layout.createSequentialGroup()
@@ -1138,17 +1191,18 @@ roundPanel7.setBackground(new Color(0,0,0, 25));
                             .addContainerGap()
                             .addGroup(roundPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addComponent(jButton12, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(code3, javax.swing.GroupLayout.PREFERRED_SIZE, 295, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                                .addComponent(code3, javax.swing.GroupLayout.PREFERRED_SIZE, 295, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                    .addGroup(roundPanel7Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(BackConfirmPassword)))
                 .addContainerGap(69, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, roundPanel7Layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(jButton11, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(155, 155, 155))
         );
         roundPanel7Layout.setVerticalGroup(
             roundPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(roundPanel7Layout.createSequentialGroup()
-                .addGap(70, 70, 70)
+                .addGap(14, 14, 14)
+                .addComponent(BackConfirmPassword)
+                .addGap(33, 33, 33)
                 .addComponent(jLabel30)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(mail3, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -1220,9 +1274,9 @@ roundPanel7.setBackground(new Color(0,0,0, 25));
         jTabbedPane1.setSelectedIndex(1);
     }//GEN-LAST:event_jButton3ActionPerformed
 
-    private void fpActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fpActionPerformed
+    private void ForgotPasswordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ForgotPasswordActionPerformed
         jTabbedPane1.setSelectedIndex(3);
-    }//GEN-LAST:event_fpActionPerformed
+    }//GEN-LAST:event_ForgotPasswordActionPerformed
 
     private void adminActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adminActionPerformed
         jTabbedPane1.setSelectedIndex(2);
@@ -1351,6 +1405,18 @@ roundPanel7.setBackground(new Color(0,0,0, 25));
 
     }//GEN-LAST:event_sendcodeActionPerformed
 
+    private void BackFPActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BackFPActionPerformed
+        
+    }//GEN-LAST:event_BackFPActionPerformed
+
+    private void BackConfirmPasswordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BackConfirmPasswordActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_BackConfirmPasswordActionPerformed
+
+    private void BackCreatAccActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BackCreatAccActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_BackCreatAccActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -1387,6 +1453,11 @@ roundPanel7.setBackground(new Color(0,0,0, 25));
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton BackAdmin;
+    private javax.swing.JButton BackConfirmPassword;
+    private javax.swing.JButton BackCreatAcc;
+    private javax.swing.JButton BackFP;
+    private javax.swing.JButton ForgotPassword;
     private javax.swing.JTextField add;
     private javax.swing.JButton admin;
     private javax.swing.JTextField adn;
@@ -1402,7 +1473,6 @@ roundPanel7.setBackground(new Color(0,0,0, 25));
     private javax.swing.JTextField dc;
     private javax.swing.JTextField email;
     private javax.swing.JTextField fn;
-    private javax.swing.JButton fp;
     private javax.swing.JTextField gender;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton11;

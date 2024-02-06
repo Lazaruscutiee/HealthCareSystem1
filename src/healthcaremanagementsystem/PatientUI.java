@@ -40,7 +40,7 @@ public class PatientUI extends javax.swing.JFrame {
         jTabbedPane1 = new javax.swing.JTabbedPane();
         kGradientPanel4 = new keeptoo.KGradientPanel();
         kGradientPanel3 = new keeptoo.KGradientPanel();
-        jTextField1 = new javax.swing.JTextField();
+        SeachBar = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         kGradientPanel5 = new keeptoo.KGradientPanel();
@@ -122,6 +122,11 @@ public class PatientUI extends javax.swing.JFrame {
 
         out.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/icons8_logout_rounded_left_32px.png"))); // NOI18N
         out.setContentAreaFilled(false);
+        out.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                outActionPerformed(evt);
+            }
+        });
 
         msg.setFont(new java.awt.Font("OCR A Extended", 0, 12)); // NOI18N
         msg.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/icons8_sms_32px_1.png"))); // NOI18N
@@ -171,11 +176,12 @@ public class PatientUI extends javax.swing.JFrame {
                 .addComponent(notif)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(msg)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 78, Short.MAX_VALUE)
-                .addComponent(out))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 74, Short.MAX_VALUE)
+                .addComponent(out)
+                .addGap(34, 34, 34))
         );
 
-        kGradientPanel1.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 170, 470));
+        kGradientPanel1.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 170, 500));
 
         kGradientPanel4.setkEndColor(new java.awt.Color(255, 247, 207));
         kGradientPanel4.setkGradientFocus(250);
@@ -185,7 +191,11 @@ public class PatientUI extends javax.swing.JFrame {
         kGradientPanel3.setkGradientFocus(250);
         kGradientPanel3.setkStartColor(new java.awt.Color(132, 191, 221));
 
-        jTextField1.setText("jTextField1");
+        SeachBar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                SeachBarActionPerformed(evt);
+            }
+        });
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/icons8_camera_addon_identification_26px.png"))); // NOI18N
 
@@ -203,7 +213,7 @@ public class PatientUI extends javax.swing.JFrame {
                     .addGroup(kGradientPanel3Layout.createSequentialGroup()
                         .addComponent(jLabel3)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 563, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(SeachBar, javax.swing.GroupLayout.PREFERRED_SIZE, 563, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(31, 31, 31))
         );
         kGradientPanel3Layout.setVerticalGroup(
@@ -212,7 +222,7 @@ public class PatientUI extends javax.swing.JFrame {
                 .addGroup(kGradientPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(kGradientPanel3Layout.createSequentialGroup()
                         .addContainerGap()
-                        .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(SeachBar, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(kGradientPanel3Layout.createSequentialGroup()
                         .addGap(16, 16, 16)
                         .addComponent(jLabel3)))
@@ -247,23 +257,25 @@ public class PatientUI extends javax.swing.JFrame {
         kGradientPanel5.setkGradientFocus(250);
         kGradientPanel5.setkStartColor(new java.awt.Color(132, 191, 221));
 
-        jLabel5.setText("notif");
+        jLabel5.setFont(new java.awt.Font("OCR A Extended", 0, 24)); // NOI18N
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/icons8_notification_32px.png"))); // NOI18N
+        jLabel5.setText("NOTIFICATION");
 
         javax.swing.GroupLayout kGradientPanel5Layout = new javax.swing.GroupLayout(kGradientPanel5);
         kGradientPanel5.setLayout(kGradientPanel5Layout);
         kGradientPanel5Layout.setHorizontalGroup(
             kGradientPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, kGradientPanel5Layout.createSequentialGroup()
-                .addContainerGap(323, Short.MAX_VALUE)
+            .addGroup(kGradientPanel5Layout.createSequentialGroup()
+                .addContainerGap()
                 .addComponent(jLabel5)
-                .addGap(292, 292, 292))
+                .addContainerGap(418, Short.MAX_VALUE))
         );
         kGradientPanel5Layout.setVerticalGroup(
             kGradientPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(kGradientPanel5Layout.createSequentialGroup()
-                .addGap(192, 192, 192)
+                .addGap(20, 20, 20)
                 .addComponent(jLabel5)
-                .addContainerGap(291, Short.MAX_VALUE))
+                .addContainerGap(447, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("tab3", kGradientPanel5);
@@ -272,23 +284,25 @@ public class PatientUI extends javax.swing.JFrame {
         kGradientPanel6.setkGradientFocus(250);
         kGradientPanel6.setkStartColor(new java.awt.Color(132, 191, 221));
 
-        jLabel6.setText("message");
+        jLabel6.setFont(new java.awt.Font("OCR A Extended", 0, 24)); // NOI18N
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/icons8_sms_32px_1.png"))); // NOI18N
+        jLabel6.setText("MESSAGES");
 
         javax.swing.GroupLayout kGradientPanel6Layout = new javax.swing.GroupLayout(kGradientPanel6);
         kGradientPanel6.setLayout(kGradientPanel6Layout);
         kGradientPanel6Layout.setHorizontalGroup(
             kGradientPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, kGradientPanel6Layout.createSequentialGroup()
-                .addContainerGap(307, Short.MAX_VALUE)
+            .addGroup(kGradientPanel6Layout.createSequentialGroup()
+                .addContainerGap()
                 .addComponent(jLabel6)
-                .addGap(287, 287, 287))
+                .addContainerGap(478, Short.MAX_VALUE))
         );
         kGradientPanel6Layout.setVerticalGroup(
             kGradientPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(kGradientPanel6Layout.createSequentialGroup()
-                .addGap(215, 215, 215)
+                .addGap(14, 14, 14)
                 .addComponent(jLabel6)
-                .addContainerGap(268, Short.MAX_VALUE))
+                .addContainerGap(453, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("tab4", kGradientPanel6);
@@ -479,6 +493,14 @@ public class PatientUI extends javax.swing.JFrame {
         jTabbedPane1.setSelectedIndex(0);
     }//GEN-LAST:event_homeActionPerformed
 
+    private void SeachBarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SeachBarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_SeachBarActionPerformed
+
+    private void outActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_outActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_outActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -515,6 +537,7 @@ public class PatientUI extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JTextField SeachBar;
     private javax.swing.JButton home;
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
@@ -534,7 +557,6 @@ public class PatientUI extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JTabbedPane jTabbedPane1;
-    private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField10;
     private javax.swing.JTextField jTextField7;
     private keeptoo.KGradientPanel kGradientPanel1;

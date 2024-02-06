@@ -30,19 +30,31 @@ public class DoctorsUI extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         jPanel5 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
+        HomeDoctor = new javax.swing.JButton();
+        DoctorList = new javax.swing.JButton();
+        DoctorNoti = new javax.swing.JButton();
+        DoctorMS = new javax.swing.JButton();
         jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        jPanel4 = new javax.swing.JPanel();
-        jTabbedPane1 = new javax.swing.JTabbedPane();
-        jLabel2 = new javax.swing.JLabel();
+        jTabbedPane2 = new javax.swing.JTabbedPane();
+        kGradientPanel3 = new keeptoo.KGradientPanel();
         jLabel3 = new javax.swing.JLabel();
+        kGradientPanel4 = new keeptoo.KGradientPanel();
         jLabel4 = new javax.swing.JLabel();
+        kGradientPanel5 = new keeptoo.KGradientPanel();
         jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
+        kGradientPanel2 = new keeptoo.KGradientPanel();
+        jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        kGradientPanel1.setkEndColor(new java.awt.Color(255, 247, 207));
+        kGradientPanel1.setkGradientFocus(250);
+        kGradientPanel1.setkStartColor(new java.awt.Color(132, 191, 221));
+        kGradientPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jPanel1.setBackground(new java.awt.Color(32, 186, 202));
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setText("Profile");
 
@@ -50,121 +62,211 @@ public class DoctorsUI extends javax.swing.JFrame {
         jPanel5.setLayout(jPanel5Layout);
         jPanel5Layout.setHorizontalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel5Layout.createSequentialGroup()
-                .addGap(24, 24, 24)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5Layout.createSequentialGroup()
+                .addContainerGap(29, Short.MAX_VALUE)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(30, Short.MAX_VALUE))
+                .addGap(25, 25, 25))
         );
         jPanel5Layout.setVerticalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel5Layout.createSequentialGroup()
-                .addGap(42, 42, 42)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5Layout.createSequentialGroup()
+                .addContainerGap(43, Short.MAX_VALUE)
                 .addComponent(jLabel1)
-                .addContainerGap(42, Short.MAX_VALUE))
+                .addGap(41, 41, 41))
         );
 
-        jButton1.setText("HOME");
+        jPanel1.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(55, 24, -1, -1));
 
-        jButton2.setText("Appointment List");
+        HomeDoctor.setBackground(new java.awt.Color(32, 186, 202));
+        HomeDoctor.setFont(new java.awt.Font("OCR A Extended", 0, 12)); // NOI18N
+        HomeDoctor.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/icons8_home_page_32px_1.png"))); // NOI18N
+        HomeDoctor.setText("HOME");
+        HomeDoctor.setBorder(null);
+        HomeDoctor.setContentAreaFilled(false);
+        HomeDoctor.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                HomeDoctorActionPerformed(evt);
+            }
+        });
+        jPanel1.add(HomeDoctor, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 150, 100, -1));
 
-        jButton3.setText("Notification");
+        DoctorList.setBackground(new java.awt.Color(32, 186, 202));
+        DoctorList.setFont(new java.awt.Font("OCR A Extended", 0, 12)); // NOI18N
+        DoctorList.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/icons8_survey_32px.png"))); // NOI18N
+        DoctorList.setText("Appointment List");
+        DoctorList.setBorder(null);
+        DoctorList.setContentAreaFilled(false);
+        DoctorList.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                DoctorListActionPerformed(evt);
+            }
+        });
+        jPanel1.add(DoctorList, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 190, 150, -1));
 
-        jButton4.setText("Message");
+        DoctorNoti.setBackground(new java.awt.Color(32, 186, 202));
+        DoctorNoti.setFont(new java.awt.Font("OCR A Extended", 0, 12)); // NOI18N
+        DoctorNoti.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/icons8_google_alerts_32px.png"))); // NOI18N
+        DoctorNoti.setText("Notification");
+        DoctorNoti.setBorder(null);
+        DoctorNoti.setContentAreaFilled(false);
+        DoctorNoti.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                DoctorNotiActionPerformed(evt);
+            }
+        });
+        jPanel1.add(DoctorNoti, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 230, 140, -1));
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(92, 92, 92))
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(90, 90, 90)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(84, Short.MAX_VALUE))
+        DoctorMS.setBackground(new java.awt.Color(32, 186, 202));
+        DoctorMS.setFont(new java.awt.Font("OCR A Extended", 0, 12)); // NOI18N
+        DoctorMS.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/icons8_sms_32px_1.png"))); // NOI18N
+        DoctorMS.setText("Message");
+        DoctorMS.setBorder(null);
+        DoctorMS.setContentAreaFilled(false);
+        DoctorMS.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                DoctorMSActionPerformed(evt);
+            }
+        });
+        jPanel1.add(DoctorMS, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 270, 110, -1));
+
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/icons8_logout_rounded_left_32px.png"))); // NOI18N
+        jButton1.setContentAreaFilled(false);
+        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 490, -1, -1));
+
+        kGradientPanel1.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 200, 540));
+
+        kGradientPanel3.setkEndColor(new java.awt.Color(255, 247, 207));
+        kGradientPanel3.setkGradientFocus(250);
+        kGradientPanel3.setkStartColor(new java.awt.Color(132, 191, 221));
+
+        jLabel3.setFont(new java.awt.Font("OCR A Extended", 0, 24)); // NOI18N
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/icons8_home_page_32px_1.png"))); // NOI18N
+        jLabel3.setText("HOME");
+
+        javax.swing.GroupLayout kGradientPanel3Layout = new javax.swing.GroupLayout(kGradientPanel3);
+        kGradientPanel3.setLayout(kGradientPanel3Layout);
+        kGradientPanel3Layout.setHorizontalGroup(
+            kGradientPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(kGradientPanel3Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel3)
+                .addContainerGap(618, Short.MAX_VALUE))
         );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(40, 40, 40)
-                .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jButton1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton3)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton4)
-                .addContainerGap(207, Short.MAX_VALUE))
-        );
-
-        jLabel2.setText("jLabel2");
-        jTabbedPane1.addTab("Home", jLabel2);
-
-        jLabel3.setText("jLabel3");
-        jTabbedPane1.addTab("Appointment list", jLabel3);
-
-        jLabel4.setText("jLabel4");
-        jTabbedPane1.addTab("Notification", jLabel4);
-
-        jLabel5.setText("jLabel4");
-        jTabbedPane1.addTab("Message", jLabel5);
-
-        jLabel6.setText("jLabel4");
-        jTabbedPane1.addTab("Client's Info", jLabel6);
-
-        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
-        jPanel4.setLayout(jPanel4Layout);
-        jPanel4Layout.setHorizontalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jTabbedPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 562, Short.MAX_VALUE)
-        );
-        jPanel4Layout.setVerticalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jTabbedPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 469, Short.MAX_VALUE)
-        );
-
-        javax.swing.GroupLayout kGradientPanel1Layout = new javax.swing.GroupLayout(kGradientPanel1);
-        kGradientPanel1.setLayout(kGradientPanel1Layout);
-        kGradientPanel1Layout.setHorizontalGroup(
-            kGradientPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(kGradientPanel1Layout.createSequentialGroup()
-                .addGap(23, 23, 23)
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        kGradientPanel1Layout.setVerticalGroup(
-            kGradientPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(kGradientPanel1Layout.createSequentialGroup()
+        kGradientPanel3Layout.setVerticalGroup(
+            kGradientPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(kGradientPanel3Layout.createSequentialGroup()
                 .addGap(14, 14, 14)
-                .addGroup(kGradientPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(17, Short.MAX_VALUE))
+                .addComponent(jLabel3)
+                .addContainerGap(503, Short.MAX_VALUE))
         );
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(kGradientPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        jTabbedPane2.addTab("APPOINTMENT LIST", kGradientPanel3);
+
+        kGradientPanel4.setkEndColor(new java.awt.Color(255, 247, 207));
+        kGradientPanel4.setkGradientFocus(250);
+        kGradientPanel4.setkStartColor(new java.awt.Color(132, 191, 221));
+
+        jLabel4.setFont(new java.awt.Font("OCR A Extended", 0, 24)); // NOI18N
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/icons8_survey_32px.png"))); // NOI18N
+        jLabel4.setText("APPLICATION LIST");
+
+        javax.swing.GroupLayout kGradientPanel4Layout = new javax.swing.GroupLayout(kGradientPanel4);
+        kGradientPanel4.setLayout(kGradientPanel4Layout);
+        kGradientPanel4Layout.setHorizontalGroup(
+            kGradientPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(kGradientPanel4Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel4)
+                .addContainerGap(438, Short.MAX_VALUE))
         );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(kGradientPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        kGradientPanel4Layout.setVerticalGroup(
+            kGradientPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(kGradientPanel4Layout.createSequentialGroup()
+                .addGap(15, 15, 15)
+                .addComponent(jLabel4)
+                .addContainerGap(502, Short.MAX_VALUE))
         );
+
+        jTabbedPane2.addTab("NOTIFICATION", kGradientPanel4);
+
+        kGradientPanel5.setkEndColor(new java.awt.Color(255, 247, 207));
+        kGradientPanel5.setkGradientFocus(250);
+        kGradientPanel5.setkStartColor(new java.awt.Color(132, 191, 221));
+
+        jLabel5.setFont(new java.awt.Font("OCR A Extended", 0, 24)); // NOI18N
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/icons8_notification_32px.png"))); // NOI18N
+        jLabel5.setText("NOTIFICATION");
+
+        javax.swing.GroupLayout kGradientPanel5Layout = new javax.swing.GroupLayout(kGradientPanel5);
+        kGradientPanel5.setLayout(kGradientPanel5Layout);
+        kGradientPanel5Layout.setHorizontalGroup(
+            kGradientPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(kGradientPanel5Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel5)
+                .addContainerGap(498, Short.MAX_VALUE))
+        );
+        kGradientPanel5Layout.setVerticalGroup(
+            kGradientPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(kGradientPanel5Layout.createSequentialGroup()
+                .addGap(14, 14, 14)
+                .addComponent(jLabel5)
+                .addContainerGap(503, Short.MAX_VALUE))
+        );
+
+        jTabbedPane2.addTab("MESSAGE", kGradientPanel5);
+
+        kGradientPanel2.setkEndColor(new java.awt.Color(255, 247, 207));
+        kGradientPanel2.setkGradientFocus(250);
+        kGradientPanel2.setkStartColor(new java.awt.Color(132, 191, 221));
+
+        jLabel2.setFont(new java.awt.Font("OCR A Extended", 0, 24)); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/icons8_sms_32px_1.png"))); // NOI18N
+        jLabel2.setText("MESSAGES");
+
+        javax.swing.GroupLayout kGradientPanel2Layout = new javax.swing.GroupLayout(kGradientPanel2);
+        kGradientPanel2.setLayout(kGradientPanel2Layout);
+        kGradientPanel2Layout.setHorizontalGroup(
+            kGradientPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(kGradientPanel2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel2)
+                .addContainerGap(558, Short.MAX_VALUE))
+        );
+        kGradientPanel2Layout.setVerticalGroup(
+            kGradientPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(kGradientPanel2Layout.createSequentialGroup()
+                .addGap(18, 18, 18)
+                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(496, Short.MAX_VALUE))
+        );
+
+        jTabbedPane2.addTab("HOME", kGradientPanel2);
+
+        kGradientPanel1.add(jTabbedPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, -40, 720, 580));
+
+        getContentPane().add(kGradientPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 902, -1));
 
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void DoctorMSActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DoctorMSActionPerformed
+        jTabbedPane2.setSelectedIndex(3
+        );
+    }//GEN-LAST:event_DoctorMSActionPerformed
+
+    private void HomeDoctorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_HomeDoctorActionPerformed
+        jTabbedPane2.setSelectedIndex(0);
+    }//GEN-LAST:event_HomeDoctorActionPerformed
+
+    private void DoctorListActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DoctorListActionPerformed
+        jTabbedPane2.setSelectedIndex(1);
+    }//GEN-LAST:event_DoctorListActionPerformed
+
+    private void DoctorNotiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DoctorNotiActionPerformed
+        jTabbedPane2.setSelectedIndex(2);
+    }//GEN-LAST:event_DoctorNotiActionPerformed
 
     /**
      * @param args the command line arguments
@@ -202,20 +304,23 @@ public class DoctorsUI extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton DoctorList;
+    private javax.swing.JButton DoctorMS;
+    private javax.swing.JButton DoctorNoti;
+    private javax.swing.JButton HomeDoctor;
     private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
-    private javax.swing.JTabbedPane jTabbedPane1;
+    private javax.swing.JTabbedPane jTabbedPane2;
     private keeptoo.KGradientPanel kGradientPanel1;
+    private keeptoo.KGradientPanel kGradientPanel2;
+    private keeptoo.KGradientPanel kGradientPanel3;
+    private keeptoo.KGradientPanel kGradientPanel4;
+    private keeptoo.KGradientPanel kGradientPanel5;
     // End of variables declaration//GEN-END:variables
 }
