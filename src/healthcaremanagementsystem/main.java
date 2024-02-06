@@ -32,19 +32,15 @@ public class main extends javax.swing.JFrame {
         jLabel4.setIcon(i);
         
         
-        ln.setBackground(new java.awt.Color(0,0,0,1));
-         fn.setBackground(new java.awt.Color(0,0,0,1));
-         mn.setBackground(new java.awt.Color(0,0,0,1));
-         su.setBackground(new java.awt.Color(0,0,0,1));
-         age.setBackground(new java.awt.Color(0,0,0,1));
-         email.setBackground(new java.awt.Color(0,0,0,1));
-         cn.setBackground(new java.awt.Color(0,0,0,1));
-         pass.setBackground(new java.awt.Color(0,0,0,1));
-         add.setBackground(new java.awt.Color(0,0,0,1));
-         license.setBackground(new java.awt.Color(0,0,0,1));
-         gender.setBackground(new java.awt.Color(0,0,0,1));
-         bd.setBackground(new java.awt.Color(0,0,0,1));
-           dc.setBackground(new java.awt.Color(0,0,0,1));
+        txtname.setBackground(new java.awt.Color(0,0,0,1));
+         txtusername.setBackground(new java.awt.Color(0,0,0,1));
+         txtage.setBackground(new java.awt.Color(0,0,0,1));
+         txtbday.setBackground(new java.awt.Color(0,0,0,1));
+         txtnumber.setBackground(new java.awt.Color(0,0,0,1));
+         txtpass.setBackground(new java.awt.Color(0,0,0,1));
+         txtadd.setBackground(new java.awt.Color(0,0,0,1));
+         txtgender.setBackground(new java.awt.Color(0,0,0,1));
+         txtemail.setBackground(new java.awt.Color(0,0,0,1));
            uname.setBackground(new java.awt.Color(0,0,0,1));
         upass.setBackground(new java.awt.Color(0,0,0,1));
 
@@ -102,36 +98,27 @@ roundPanel7.setBackground(new Color(0,0,0, 25));
         jButton1 = new javax.swing.JButton();
         kGradientPanel2 = new keeptoo.KGradientPanel();
         kGradientPanel3 = new keeptoo.KGradientPanel();
-        add = new javax.swing.JTextField();
-        pass = new javax.swing.JTextField();
+        txtadd = new javax.swing.JTextField();
+        txtpass = new javax.swing.JTextField();
         jLabel11 = new javax.swing.JLabel();
-        license = new javax.swing.JTextField();
         jLabel12 = new javax.swing.JLabel();
         signinto = new javax.swing.JButton();
         jLabel20 = new javax.swing.JLabel();
-        fn = new javax.swing.JTextField();
-        age = new javax.swing.JTextField();
+        txtusername = new javax.swing.JTextField();
+        txtage = new javax.swing.JTextField();
         jLabel7 = new javax.swing.JLabel();
-        gender = new javax.swing.JTextField();
-        jLabel8 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
+        txtgender = new javax.swing.JTextField();
         jLabel13 = new javax.swing.JLabel();
-        cn = new javax.swing.JTextField();
+        txtnumber = new javax.swing.JTextField();
         jLabel14 = new javax.swing.JLabel();
-        jLabel18 = new javax.swing.JLabel();
-        bd = new javax.swing.JTextField();
+        txtemail = new javax.swing.JTextField();
         jLabel17 = new javax.swing.JLabel();
-        ln = new javax.swing.JTextField();
+        txtname = new javax.swing.JTextField();
         jLabel10 = new javax.swing.JLabel();
         jLabel19 = new javax.swing.JLabel();
-        mn = new javax.swing.JTextField();
-        email = new javax.swing.JTextField();
-        su = new javax.swing.JTextField();
-        jLabel3 = new javax.swing.JLabel();
-        dc = new javax.swing.JTextField();
-        jLabel23 = new javax.swing.JLabel();
-        patients = new javax.swing.JRadioButton();
+        txtbday = new javax.swing.JTextField();
         BackCreatAcc = new javax.swing.JButton();
+        jLabel6 = new javax.swing.JLabel();
         kGradientPanel5 = new keeptoo.KGradientPanel();
         roundPanel1 = new healthcaremanagementsystem.RoundPanel();
         jLabel21 = new javax.swing.JLabel();
@@ -592,22 +579,19 @@ roundPanel7.setBackground(new Color(0,0,0, 25));
         kGradientPanel3.setkGradientFocus(250);
         kGradientPanel3.setkStartColor(new java.awt.Color(132, 191, 221));
 
-        add.setFont(new java.awt.Font("MS Gothic", 1, 18)); // NOI18N
-        add.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(8, 76, 110)));
+        txtadd.setFont(new java.awt.Font("MS Gothic", 1, 18)); // NOI18N
+        txtadd.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(8, 76, 110)));
 
-        pass.setFont(new java.awt.Font("MS Gothic", 1, 18)); // NOI18N
-        pass.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(8, 76, 110)));
-        pass.addActionListener(new java.awt.event.ActionListener() {
+        txtpass.setFont(new java.awt.Font("MS Gothic", 1, 18)); // NOI18N
+        txtpass.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(8, 76, 110)));
+        txtpass.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                passActionPerformed(evt);
+                txtpassActionPerformed(evt);
             }
         });
 
         jLabel11.setFont(new java.awt.Font("OCR A Extended", 0, 18)); // NOI18N
-        jLabel11.setText("First Name:");
-
-        license.setFont(new java.awt.Font("MS Gothic", 1, 18)); // NOI18N
-        license.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(8, 76, 110)));
+        jLabel11.setText("Username:");
 
         jLabel12.setFont(new java.awt.Font("OCR A Extended", 0, 18)); // NOI18N
         jLabel12.setText("Birthdate:");
@@ -625,48 +609,39 @@ roundPanel7.setBackground(new Color(0,0,0, 25));
         jLabel20.setFont(new java.awt.Font("OCR A Extended", 0, 18)); // NOI18N
         jLabel20.setText("Password:");
 
-        fn.setFont(new java.awt.Font("MS Gothic", 1, 18)); // NOI18N
-        fn.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(8, 76, 110)));
+        txtusername.setFont(new java.awt.Font("MS Gothic", 1, 18)); // NOI18N
+        txtusername.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(8, 76, 110)));
 
-        age.setFont(new java.awt.Font("MS Gothic", 1, 18)); // NOI18N
-        age.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(8, 76, 110)));
+        txtage.setFont(new java.awt.Font("MS Gothic", 1, 18)); // NOI18N
+        txtage.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(8, 76, 110)));
 
         jLabel7.setFont(new java.awt.Font("OCR A Extended", 0, 18)); // NOI18N
-        jLabel7.setText("Last Name:");
+        jLabel7.setText("Name:");
 
-        gender.setFont(new java.awt.Font("MS Gothic", 1, 18)); // NOI18N
-        gender.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(8, 76, 110)));
-
-        jLabel8.setFont(new java.awt.Font("OCR A Extended", 0, 18)); // NOI18N
-        jLabel8.setText("Suffix");
-
-        jLabel9.setFont(new java.awt.Font("OCR A Extended", 0, 18)); // NOI18N
-        jLabel9.setText("Middle Name:");
+        txtgender.setFont(new java.awt.Font("MS Gothic", 1, 18)); // NOI18N
+        txtgender.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(8, 76, 110)));
 
         jLabel13.setFont(new java.awt.Font("OCR A Extended", 0, 18)); // NOI18N
         jLabel13.setText("Age:");
 
-        cn.setFont(new java.awt.Font("MS Gothic", 1, 18)); // NOI18N
-        cn.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(8, 76, 110)));
+        txtnumber.setFont(new java.awt.Font("MS Gothic", 1, 18)); // NOI18N
+        txtnumber.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(8, 76, 110)));
 
         jLabel14.setFont(new java.awt.Font("OCR A Extended", 0, 18)); // NOI18N
         jLabel14.setText("Gender:");
 
-        jLabel18.setFont(new java.awt.Font("OCR A Extended", 0, 18)); // NOI18N
-        jLabel18.setText("License Number: ");
-
-        bd.setFont(new java.awt.Font("MS Gothic", 1, 18)); // NOI18N
-        bd.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(8, 76, 110)));
+        txtemail.setFont(new java.awt.Font("MS Gothic", 1, 18)); // NOI18N
+        txtemail.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(8, 76, 110)));
 
         jLabel17.setFont(new java.awt.Font("OCR A Extended", 0, 18)); // NOI18N
         jLabel17.setText("Address:");
         jLabel17.setToolTipText("");
 
-        ln.setFont(new java.awt.Font("MS PGothic", 1, 18)); // NOI18N
-        ln.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(8, 76, 110)));
-        ln.addActionListener(new java.awt.event.ActionListener() {
+        txtname.setFont(new java.awt.Font("MS PGothic", 1, 18)); // NOI18N
+        txtname.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(8, 76, 110)));
+        txtname.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                lnActionPerformed(evt);
+                txtnameActionPerformed(evt);
             }
         });
 
@@ -676,30 +651,8 @@ roundPanel7.setBackground(new Color(0,0,0, 25));
         jLabel19.setFont(new java.awt.Font("OCR A Extended", 0, 18)); // NOI18N
         jLabel19.setText("Contact Number:");
 
-        mn.setFont(new java.awt.Font("MS Gothic", 1, 18)); // NOI18N
-        mn.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(8, 76, 110)));
-
-        email.setFont(new java.awt.Font("MS Gothic", 1, 18)); // NOI18N
-        email.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(8, 76, 110)));
-
-        su.setFont(new java.awt.Font("MS Gothic", 1, 18)); // NOI18N
-        su.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(8, 76, 110)));
-
-        jLabel3.setFont(new java.awt.Font("OCR A Extended", 0, 18)); // NOI18N
-        jLabel3.setText("Doctor of Medicine:");
-
-        dc.setFont(new java.awt.Font("MS Gothic", 1, 18)); // NOI18N
-        dc.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(8, 76, 110)));
-
-        jLabel23.setText("Press this button if you are a patient");
-
-        patients.setFont(new java.awt.Font("OCR A Extended", 0, 14)); // NOI18N
-        patients.setText("Patient");
-        patients.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                patientsActionPerformed(evt);
-            }
-        });
+        txtbday.setFont(new java.awt.Font("MS Gothic", 1, 18)); // NOI18N
+        txtbday.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(8, 76, 110)));
 
         BackCreatAcc.setFont(new java.awt.Font("OCR A Extended", 0, 18)); // NOI18N
         BackCreatAcc.setText("Back");
@@ -711,77 +664,13 @@ roundPanel7.setBackground(new Color(0,0,0, 25));
             }
         });
 
+        jLabel6.setFont(new java.awt.Font("SansSerif", 0, 24)); // NOI18N
+        jLabel6.setText("Personal Information");
+
         javax.swing.GroupLayout kGradientPanel3Layout = new javax.swing.GroupLayout(kGradientPanel3);
         kGradientPanel3.setLayout(kGradientPanel3Layout);
         kGradientPanel3Layout.setHorizontalGroup(
             kGradientPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(kGradientPanel3Layout.createSequentialGroup()
-                .addGap(23, 23, 23)
-                .addGroup(kGradientPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(kGradientPanel3Layout.createSequentialGroup()
-                        .addComponent(patients)
-                        .addGap(0, 0, Short.MAX_VALUE))
-                    .addGroup(kGradientPanel3Layout.createSequentialGroup()
-                        .addGroup(kGradientPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(kGradientPanel3Layout.createSequentialGroup()
-                                .addComponent(jLabel13)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(age, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(jLabel14)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(gender, javax.swing.GroupLayout.PREFERRED_SIZE, 137, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jLabel19)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(cn, javax.swing.GroupLayout.DEFAULT_SIZE, 175, Short.MAX_VALUE))
-                            .addGroup(kGradientPanel3Layout.createSequentialGroup()
-                                .addGroup(kGradientPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(kGradientPanel3Layout.createSequentialGroup()
-                                        .addComponent(ln, javax.swing.GroupLayout.PREFERRED_SIZE, 192, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addGroup(kGradientPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(fn, javax.swing.GroupLayout.PREFERRED_SIZE, 194, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(jLabel11)))
-                                    .addComponent(jLabel7)
-                                    .addComponent(jLabel23))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(kGradientPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(mn, javax.swing.GroupLayout.PREFERRED_SIZE, 153, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jLabel9))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(kGradientPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel8)
-                                    .addComponent(su, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(0, 0, Short.MAX_VALUE)))
-                        .addGap(46, 46, 46))
-                    .addGroup(kGradientPanel3Layout.createSequentialGroup()
-                        .addGroup(kGradientPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(kGradientPanel3Layout.createSequentialGroup()
-                                .addComponent(jLabel12)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(bd, javax.swing.GroupLayout.PREFERRED_SIZE, 227, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jLabel10)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(email, javax.swing.GroupLayout.PREFERRED_SIZE, 197, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(kGradientPanel3Layout.createSequentialGroup()
-                                .addComponent(jLabel17)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(add, javax.swing.GroupLayout.PREFERRED_SIZE, 529, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(kGradientPanel3Layout.createSequentialGroup()
-                                .addComponent(jLabel20)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(pass, javax.swing.GroupLayout.PREFERRED_SIZE, 255, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(kGradientPanel3Layout.createSequentialGroup()
-                                .addComponent(jLabel18)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(license, javax.swing.GroupLayout.PREFERRED_SIZE, 302, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(kGradientPanel3Layout.createSequentialGroup()
-                                .addComponent(jLabel3)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(dc, javax.swing.GroupLayout.PREFERRED_SIZE, 455, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, kGradientPanel3Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(kGradientPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -790,61 +679,105 @@ roundPanel7.setBackground(new Color(0,0,0, 25));
                         .addComponent(BackCreatAcc, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(39, 39, 39)))
                 .addGap(314, 314, 314))
+            .addGroup(kGradientPanel3Layout.createSequentialGroup()
+                .addGap(20, 20, 20)
+                .addGroup(kGradientPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(kGradientPanel3Layout.createSequentialGroup()
+                        .addGroup(kGradientPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(kGradientPanel3Layout.createSequentialGroup()
+                                .addComponent(jLabel19)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(txtnumber, javax.swing.GroupLayout.DEFAULT_SIZE, 184, Short.MAX_VALUE))
+                            .addGroup(kGradientPanel3Layout.createSequentialGroup()
+                                .addGroup(kGradientPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(kGradientPanel3Layout.createSequentialGroup()
+                                        .addComponent(jLabel11)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(txtusername, javax.swing.GroupLayout.PREFERRED_SIZE, 194, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(kGradientPanel3Layout.createSequentialGroup()
+                                        .addComponent(jLabel10)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(txtemail, javax.swing.GroupLayout.PREFERRED_SIZE, 227, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addGap(0, 0, Short.MAX_VALUE)))
+                        .addGap(427, 427, 427))
+                    .addGroup(kGradientPanel3Layout.createSequentialGroup()
+                        .addGroup(kGradientPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(kGradientPanel3Layout.createSequentialGroup()
+                                .addComponent(jLabel14)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(txtgender, javax.swing.GroupLayout.PREFERRED_SIZE, 137, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(kGradientPanel3Layout.createSequentialGroup()
+                                .addComponent(jLabel12)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(txtbday, javax.swing.GroupLayout.PREFERRED_SIZE, 197, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jLabel6)
+                            .addGroup(kGradientPanel3Layout.createSequentialGroup()
+                                .addComponent(jLabel7)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(txtname, javax.swing.GroupLayout.PREFERRED_SIZE, 514, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(kGradientPanel3Layout.createSequentialGroup()
+                                .addComponent(jLabel13)
+                                .addGap(18, 18, 18)
+                                .addComponent(txtage, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(kGradientPanel3Layout.createSequentialGroup()
+                                .addComponent(jLabel20)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(txtpass, javax.swing.GroupLayout.PREFERRED_SIZE, 255, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(kGradientPanel3Layout.createSequentialGroup()
+                                .addComponent(jLabel17)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(txtadd, javax.swing.GroupLayout.PREFERRED_SIZE, 529, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
         kGradientPanel3Layout.setVerticalGroup(
             kGradientPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(kGradientPanel3Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel23)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(patients)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGap(9, 9, 9)
+                .addComponent(jLabel6)
+                .addGap(18, 18, 18)
                 .addGroup(kGradientPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel7)
-                    .addComponent(jLabel11)
-                    .addComponent(jLabel9)
-                    .addComponent(jLabel8))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(kGradientPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(ln, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(fn)
-                    .addComponent(mn)
-                    .addComponent(su, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(17, 17, 17)
+                    .addComponent(txtname, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(kGradientPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel13, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(age, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtage, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(kGradientPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel14)
-                    .addComponent(gender, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel19)
-                    .addComponent(cn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
+                    .addComponent(txtgender, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(9, 9, 9)
                 .addGroup(kGradientPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel12)
-                    .addComponent(bd, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel10)
-                    .addComponent(email, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
+                    .addComponent(txtbday, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(kGradientPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel17)
-                    .addComponent(add, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(kGradientPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(pass, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel20, javax.swing.GroupLayout.Alignment.TRAILING))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(kGradientPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel18)
-                    .addComponent(license, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(kGradientPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel3)
-                    .addComponent(dc, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(47, 47, 47)
-                .addComponent(signinto)
+                    .addComponent(txtadd, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(BackCreatAcc)
-                .addGap(25, 25, 25))
+                .addGroup(kGradientPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel19)
+                    .addComponent(txtnumber, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(kGradientPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(kGradientPanel3Layout.createSequentialGroup()
+                        .addGap(170, 170, 170)
+                        .addComponent(signinto)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(BackCreatAcc))
+                    .addGroup(kGradientPanel3Layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(kGradientPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel10)
+                            .addComponent(txtemail, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(kGradientPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel11)
+                            .addComponent(txtusername, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(kGradientPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel20)
+                            .addComponent(txtpass, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addGap(9, 9, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout kGradientPanel2Layout = new javax.swing.GroupLayout(kGradientPanel2);
@@ -859,9 +792,9 @@ roundPanel7.setBackground(new Color(0,0,0, 25));
         kGradientPanel2Layout.setVerticalGroup(
             kGradientPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(kGradientPanel2Layout.createSequentialGroup()
-                .addGap(32, 32, 32)
+                .addGap(23, 23, 23)
                 .addComponent(kGradientPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(34, Short.MAX_VALUE))
+                .addContainerGap(28, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("tab2", kGradientPanel2);
@@ -1286,67 +1219,17 @@ roundPanel7.setBackground(new Color(0,0,0, 25));
         // TODO add your handling code here:
     }//GEN-LAST:event_ucomboActionPerformed
 
-    private void passActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_passActionPerformed
+    private void txtpassActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtpassActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_passActionPerformed
+    }//GEN-LAST:event_txtpassActionPerformed
 
     private void signintoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_signintoActionPerformed
-        if(patients.isSelected()){
-            new PatientUI().setVisible(true);
-            dispose();
-        }else {
-            new DoctorsUI ().setVisible(true);
-            dispose();
-
-            //
-            //             String LastName = ln.getText();
-            //             String FirstName = fn.getText();
-            //             String  MidlleName = mn.getText();
-            //             String Suffix = su.getText();
-            //             String Age = age.getText();
-            //             String Gender = gender.getText();
-            //             String ContactNumber = cn.getText();
-            //             String Email = email.getText();
-            //             String Birthdate = bd.getText();
-            //             String Address = add.getText();
-            //             String Password = pass.getText();
-            //             String LicenseNumber = license.getSelectedText();
-            //             String Medicine = dc.getText();
-            //
-            //
-            //            try {
-                //                 Connection con = connection.getCon();
-                //                PreparedStatement pst = (PreparedStatement) con.prepareStatement("insert into details values(?,?,?,?,?,?,?,?,?,?,?,?,?,)" );
-                //
-                //
-                //            pst.setString(1, ln);
-                //            pst.setString(2, fn);
-                //            pst.setString(3, mn);
-                //             pst.setString(4, su);
-                //             pst.setString(5, age);
-                //             pst.setString(6, gender);
-                //             pst.setString(7, cn);
-                //             pst.setString(8, email);
-                //             pst.setString(9, bd);
-                //            pst.setString(10, add);
-                //            pst.setString(11, pass);
-                //            pst.setString(12, license);
-                //            pst.setString(13, dc);
-                //           pst.executeUpdate();
-                //            } catch (SQLException ex) {
-                //                 JOptionPane.showMessageDialog(null,ex);
-                //            }
-        }
+      
     }//GEN-LAST:event_signintoActionPerformed
 
-    private void lnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_lnActionPerformed
+    private void txtnameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtnameActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_lnActionPerformed
-
-    private void patientsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_patientsActionPerformed
-        license.setEnabled(!license.isEnabled());
-        dc.setEnabled(!dc.isEnabled());
-    }//GEN-LAST:event_patientsActionPerformed
+    }//GEN-LAST:event_txtnameActionPerformed
 
     private void codeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_codeActionPerformed
         // TODO add your handling code here:
@@ -1458,22 +1341,14 @@ roundPanel7.setBackground(new Color(0,0,0, 25));
     private javax.swing.JButton BackCreatAcc;
     private javax.swing.JButton BackFP;
     private javax.swing.JButton ForgotPassword;
-    private javax.swing.JTextField add;
     private javax.swing.JButton admin;
     private javax.swing.JTextField adn;
     private javax.swing.JPasswordField adp;
-    private javax.swing.JTextField age;
-    private javax.swing.JTextField bd;
     private javax.swing.JTextField btnemail;
-    private javax.swing.JTextField cn;
     private javax.swing.JTextField code;
     private javax.swing.JTextField code1;
     private javax.swing.JTextField code2;
     private javax.swing.JTextField code3;
-    private javax.swing.JTextField dc;
-    private javax.swing.JTextField email;
-    private javax.swing.JTextField fn;
-    private javax.swing.JTextField gender;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton11;
     private javax.swing.JButton jButton12;
@@ -1492,27 +1367,23 @@ roundPanel7.setBackground(new Color(0,0,0, 25));
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
-    private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel20;
     private javax.swing.JLabel jLabel21;
     private javax.swing.JLabel jLabel22;
-    private javax.swing.JLabel jLabel23;
     private javax.swing.JLabel jLabel24;
     private javax.swing.JLabel jLabel25;
     private javax.swing.JLabel jLabel26;
     private javax.swing.JLabel jLabel27;
     private javax.swing.JLabel jLabel28;
     private javax.swing.JLabel jLabel29;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel30;
     private javax.swing.JLabel jLabel31;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
     private javax.swing.JTabbedPane jTabbedPane1;
     private keeptoo.KGradientPanel kGradientPanel1;
     private keeptoo.KGradientPanel kGradientPanel10;
@@ -1524,15 +1395,10 @@ roundPanel7.setBackground(new Color(0,0,0, 25));
     private keeptoo.KGradientPanel kGradientPanel7;
     private keeptoo.KGradientPanel kGradientPanel8;
     private keeptoo.KGradientPanel kGradientPanel9;
-    private javax.swing.JTextField license;
-    private javax.swing.JTextField ln;
     private javax.swing.JTextField mail;
     private javax.swing.JTextField mail1;
     private javax.swing.JTextField mail3;
     private javax.swing.JButton mainsignin;
-    private javax.swing.JTextField mn;
-    private javax.swing.JTextField pass;
-    private javax.swing.JRadioButton patients;
     private healthcaremanagementsystem.RoundPanel roundPanel1;
     private healthcaremanagementsystem.RoundPanel roundPanel2;
     private healthcaremanagementsystem.RoundPanel roundPanel3;
@@ -1543,7 +1409,15 @@ roundPanel7.setBackground(new Color(0,0,0, 25));
     private javax.swing.JButton sendcode;
     private javax.swing.JButton signin2;
     private javax.swing.JButton signinto;
-    private javax.swing.JTextField su;
+    private javax.swing.JTextField txtadd;
+    private javax.swing.JTextField txtage;
+    private javax.swing.JTextField txtbday;
+    private javax.swing.JTextField txtemail;
+    private javax.swing.JTextField txtgender;
+    private javax.swing.JTextField txtname;
+    private javax.swing.JTextField txtnumber;
+    private javax.swing.JTextField txtpass;
+    private javax.swing.JTextField txtusername;
     private javax.swing.JComboBox<String> ucombo;
     private javax.swing.JTextField uname;
     private javax.swing.JPasswordField upass;
